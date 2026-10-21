@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creative Automation</title>
+  <meta name="description" content="Wat je leert in het vak Creative Automation, opleiding Digitale Vormgeving.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body data-tone="plum">
+
+  <a class="skip" href="#intro">Ga naar de inhoud</a>
+
+  <!-- Eigen cursor (enkel met muis) -->
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"><span class="cursor-label"></span></div>
+
+  <!-- Sticky navigatie bovenaan -->
+  <header class="topbar">
+    <a href="#top" class="logo" data-cursor="Naar boven">C/A</a>
+    <nav class="nav" aria-label="Hoofdstukken">
+      <a href="#intro">Intro</a>
+      <a href="#beeldbewerking">Beeld</a>
+      <a href="#social">Social</a>
+      <a href="#content">Content</a>
+      <a href="#vibe-coding">Web</a>
+      <a href="#email">E-mail</a>
+    </nav>
+    <div class="progress" aria-hidden="true"><span></span></div>
+  </header>
+
+  <!-- Hero: één template, veel varianten -->
+  <section class="hero" id="top">
+    <div class="hero-head">
+      <p class="hero-course">Een vak in de opleiding Digitale Vormgeving</p>
+      <h1 class="hero-title wobble">Creative Automation</h1>
+    </div>
+
+    <div class="batch" aria-label="Varianten van één template in verschillende formaten">
+      <div class="tile t-post"   data-format="Instagram-post" data-cursor="Variant!"><span>Creative Automation</span></div>
+      <div class="tile t-story"  data-format="Story" data-cursor="Variant!"><span>Creative Automation</span></div>
+      <div class="tile t-banner" data-format="Display-banner" data-cursor="Variant!"><span>Creative Automation</span></div>
+      <div class="tile t-post2"  data-format="Instagram-post" data-cursor="Variant!"><span>Creative Automation</span></div>
+      <div class="tile t-story2" data-format="Story" data-cursor="Variant!"><span>Creative Automation</span></div>
+      <div class="tile t-wide"   data-format="Display-banner" data-cursor="Variant!"><span>Creative Automation</span></div>
+    </div>
+
+    <div class="hero-actions">
+      <button class="btn regen magnetic" type="button" data-cursor="Batch!">Genereer nieuwe varianten</button>
+      <a class="scroll-cue" href="#intro">Lees wat je leert</a>
+    </div>
+
+    <p class="sticker sticker-hero" aria-hidden="true">Klik op<br>de vakjes</p>
+  </section>
+
+  <main>
+
+    <section id="intro" class="chapter chapter-intro" data-tone="plum">
+      <h2 class="wobble">Intro</h2>
+      <p class="lead">Creative Automation leert je hoe je als digitale vormgever repetitief werk automatiseert en AI inzet als creatieve assistent. Je werkt minder met de hand, produceert meer varianten en houdt toch de controle over het design. Doorheen het semester werk je aan een periodeopdracht: een volledige marketingcampagne voor een product, van briefing tot afgewerkte content.</p>
+    </section>
+
+    <!-- Beeldbewerking -->
+    <section id="beeldbewerking" class="chapter" data-tone="berry">
+      <div class="chapter-text">
+        <h2 class="wobble">Beeldbewerking: acties &amp; batch</h2>
+        <ol class="flow" aria-label="Een Photoshop-actie in stappen">
+          <li><span class="flow-step">Resizen</span></li>
+          <li><span class="flow-step">Generative fill</span></li>
+          <li><span class="flow-step">Logo plaatsen</span></li>
+          <li><span class="flow-step">Exporteren</span></li>
+        </ol>
+        <p>Je neemt Photoshop-acties op die een reeks bewerkingen onthouden: resizen, achtergronden uitbreiden met generative fill, een logo plaatsen en exporteren. Met batch-verwerking pas je die actie in één keer toe op een volledige map productfoto's. Zo verwerk je tientallen beelden consistent, zonder ze één voor één te openen.</p>
+      </div>
+      <div class="demo demo-batch">
+        <div class="photos"></div>
+        <div class="demo-bar">
+          <button class="btn btn-small magnetic play-batch" type="button" data-cursor="Play">Speel de batch af</button>
+          <span class="batch-count" aria-live="polite">0 van 12 verwerkt</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social -->
+    <section id="social" class="chapter reverse" data-tone="wine">
+      <div class="chapter-text">
+        <h2 class="wobble">Social media: Figma automation</h2>
+        <ol class="flow" aria-label="Van spreadsheet naar campagne">
+          <li><span class="flow-step">CSV of XLSX</span></li>
+          <li><span class="flow-step">Template in Figma Buzz</span></li>
+          <li><span class="flow-step">Bulk create</span></li>
+          <li><span class="flow-step">Posts, stories en banners</span></li>
+        </ol>
+        <p>In Figma Buzz bouw je templates voor verschillende formaten, zoals Instagram-posts, stories en display-banners. Via bulk create vul je die templates automatisch met data uit een CSV- of XLSX-bestand: titels, taglines, call-to-actions en afbeeldingen. Eén spreadsheet levert zo een volledige campagne op in alle formaten, met een consistent design.</p>
+      </div>
+      <div class="demo demo-formats">
+        <div class="format-switch" role="group" aria-label="Kies een formaat">
+          <button type="button" class="active" data-format="post">Post</button>
+          <button type="button" data-format="story">Story</button>
+          <button type="button" data-format="banner">Banner</button>
+        </div>
+        <div class="format-stage">
+          <div class="format-frame" data-format="post" data-cursor="Wissel">
+            <span class="ff-title">Creative Automation</span>
+            <span class="ff-tag">Eén template, alle formaten</span>
+            <span class="ff-cta">Ontdek</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content generatie -->
+    <section id="content" class="chapter" data-tone="red">
+      <div class="chapter-text">
+        <h2 class="wobble">Content generatie: Weave &amp; Claude Cowork</h2>
+        <ol class="flow" aria-label="Werken met AI">
+          <li><span class="flow-step">Prompt</span></li>
+          <li><span class="flow-step">Beeld of video in Weave</span></li>
+          <li><span class="flow-step">Taken met Claude Cowork</span></li>
+          <li><span class="flow-step">Zelf bijsturen</span></li>
+        </ol>
+        <p>Je genereert beelden en video met AI-tools zoals Weave, en leert hoe je met goede prompts een consistente stijl bewaakt. Met Claude Cowork laat je AI zelfstandig taken uitvoeren op je eigen bestanden: teksten schrijven, documenten opmaken en content plannen. Je ontdekt waar AI je werk versnelt en waar je zelf moet bijsturen.</p>
+      </div>
+      <div class="demo demo-prompt">
+        <p class="prompt-line">Stijl van je prompt:</p>
+        <div class="style-chips" role="group" aria-label="Kies een stijl">
+          <button type="button" class="active" data-style="zacht">Zacht</button>
+          <button type="button" data-style="grafisch">Grafisch</button>
+          <button type="button" data-style="speels">Speels</button>
+        </div>
+        <div class="gen-grid" data-style="zacht" data-cursor="Genereer">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <p class="demo-note">Vier beelden, één consistente stijl. Klik om opnieuw te genereren.</p>
+      </div>
+    </section>
+
+    <!-- Vibe coding -->
+    <section id="vibe-coding" class="chapter reverse" data-tone="orange">
+      <div class="chapter-text">
+        <h2 class="wobble">Vibe coding &amp; web</h2>
+        <ol class="flow" aria-label="Van idee naar website">
+          <li><span class="flow-step">Beschrijven in gewone taal</span></li>
+          <li><span class="flow-step">Claude Code</span></li>
+          <li><span class="flow-step">Figma via MCP</span></li>
+          <li><span class="flow-step">Online met GitHub Pages</span></li>
+        </ol>
+        <p>Met Claude Code bouw je websites en tools door in gewone taal te beschrijven wat je wil. Je breidt Claude uit met skills, en via de Figma MCP-koppeling laat je Claude ontwerpen genereren in Figma en designs omzetten naar HTML en CSS. Je bouwt zelfs je eigen Figma-plugin. Je websites zet je online met GitHub Pages.</p>
+      </div>
+      <div class="demo demo-code" data-cursor="Opnieuw">
+        <div class="term">
+          <span class="term-prompt">&gt;</span>
+          <span class="term-text" data-text="Maak een onepager over Creative Automation"></span><span class="caret"></span>
+        </div>
+        <div class="mini-site">
+          <div class="ms-bar"></div>
+          <div class="ms-hero"></div>
+          <div class="ms-row"><span></span><span></span><span></span></div>
+          <div class="ms-line"></div>
+          <div class="ms-line short"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E-mail -->
+    <section id="email" class="chapter" data-tone="plum">
+      <div class="chapter-text">
+        <h2 class="wobble">E-mailmarketing &amp; newsletters</h2>
+        <ol class="flow loop" aria-label="Een automatisatieflow">
+          <li><span class="flow-step">Inschrijvingsformulier</span></li>
+          <li><span class="flow-step">Nieuwe inschrijver</span></li>
+          <li><span class="flow-step">Reeks welkomstmails</span></li>
+        </ol>
+        <p>In MailerLite bouw je inschrijvingsformulieren die je op een website plaatst, ontwerp je e-mailcampagnes en zet je automatisatieflows op: een nieuwe inschrijver krijgt bijvoorbeeld automatisch een reeks welkomstmails. Zo leer je hoe merken hun publiek opbouwen en blijven bereiken.</p>
+      </div>
+      <div class="demo demo-mail">
+        <div class="subscribe">
+          <span class="fake-input">jij@voorbeeld.be</span>
+          <button class="btn btn-small magnetic subscribe-btn" type="button" data-cursor="Inschrijven">Schrijf je in</button>
+        </div>
+        <p class="subs"><strong class="subs-count">0</strong> inschrijvers</p>
+        <ul class="inbox" aria-live="polite"></ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p class="footer-big wobble">Tot volgend academiejaar!</p>
+    <div class="footer-row">
+      <span>Creative Automation, opleiding Digitale Vormgeving</span>
+      <a href="#top" class="to-top" data-cursor="Omhoog">Terug naar boven</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
